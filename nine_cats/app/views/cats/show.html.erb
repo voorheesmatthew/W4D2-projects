@@ -1,0 +1,24 @@
+<%= stylesheet_link_tag "application.css" %>
+
+<h1>ONE OF THE CATS!!!</h1>
+<table>
+    <thead>
+        <tr>
+            <th colspan="3"><%= @cat.name %></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><%= @cat.color%></td>
+            <td><%= @cat.birth_date%></td>
+            <td><%= @cat.sex %></td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td><textarea name="description"><%= @cat.description %></textarea></td>
+        </tr>
+    </tfoot>
+</table>
+
+
