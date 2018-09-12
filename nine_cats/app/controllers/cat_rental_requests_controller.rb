@@ -15,7 +15,7 @@ class CatRentalRequestsController < ApplicationController
   end
   
   def update
-    @cat_rental_request = CatRentalRequest.find_by(id: params[:id])
+    @cat_rental_request = CatRentalRequest.find(params[:id])
     if @cat_rental_request.update_attributes(cat_rental_request_params)
       render :show
     else
